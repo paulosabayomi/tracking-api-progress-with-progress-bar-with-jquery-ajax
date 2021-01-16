@@ -1,0 +1,34 @@
+Title: Tracking API request with JQuery XHR
+
+******************twitter like progressbar
+<style>
+    body{position: relative;}
+    .t-progress{position: fixed; top: 0; left: 0; width: 100%; height: 10px; display: block; z-index: +99999;}
+    .main-progress{background-color: rgb(2, 55, 168); height: 100%; width: 0%;}
+</style>
+
+<div class="t-progress">
+    <div class="main-progress">
+
+    </div>
+</div>
+
+*************knob js
+$(".dial").knob();
+    $('.dial').trigger(
+        'configure',
+        {
+            "fgColor":"blue",
+            "width": 80,
+        }
+    );
+
+    $('.dial').val(0).trigger('change');
+xhr
+    xhr: function() {
+                console.log("hey");
+                var xhr = new window.XMLHttpRequest();
+                    
+                
+               return xhr;
+            },

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<!-- <meta http-equiv="content-type" content="text/html; charset=UTF-8"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Dropzone Tutorial</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <style>
+      body{position: relative;}
+      .t-progress{position: fixed; top: 0; left: 0; width: 100%; height: 10px; display: block; z-index: +99999;}
+      .main-progress{background-color: rgb(131, 203, 212); height: 100%; width: 0%;}
+  </style>
+    <!-- Custom styles for this template -->
+  </head>
+
+  <body>
+    <div class="t-progress">
+      <div class="main-progress"></div>
+  </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+      <a class="navbar-brand" href="#">Paulos Ab</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="starter-template mt-5">
+          <h1 class="mt-4 text-justify">Tracking API request progress with progressbar with jQuery/AJAX XHR</h1>
+          
+          <div class="row pt-4">
+            <div class="col-lg-6 border-right">
+            <div class="row">
+              <div class="col-lg-8 d-flex align-content-center justify-content-center">
+                <input type="text" class="form-control m-auto" placeholder="Enter Country Name" id="countryApiInput">
+
+              </div>
+              <div class="col-lg-2 d-flex align-content-center justify-content-center">
+                <button class="btn btn-success btn-md btn-block m-auto" id="check-api">
+                  Fetch
+                </button>
+              </div>
+              <!-- jquery.knot plugin progress indicator -->
+              <div class="col-lg-12 mt-3">
+                <input type="text" value="75" data-thickness="0.1" class="dial">
+              </div>
+
+              <!-- bootstrap 4 progressbar -->
+              <div class="col-lg-12 mt-5">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                   aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 mt-5">
+                <h5>What is API</h5>
+                API is the acronym for Application Programming Interface, which is a software intermediary that allows two applications 
+                to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, 
+                you're using an API.
+                <br>
+                <br>
+                <strong>In easy definition:</strong>  API is the intermediary that allows users to interact with a server.
+              </div>
+
+            </div>
+            </div>
+            <!-- second section -->
+            <div class="col-lg-6">
+              <div class="col-lg-12 bg-secondary p-4 mb-5">
+                <p class="text-white">Country Name: <span class="country-name "></span></p>
+                <p class="text-white">Country Capital: <span class="country-capital "></span></p>
+                <p class="text-white">Region: <span class="region "></span></p>
+                <p class="text-white">Sub-Region: <span class="sub-region "></span></p>
+                <p class="text-white">Population: <span class="population "></span></p>
+                <p class="text-white">Currency Name: <span class="currency-name "></span></p>
+                <p class="text-white">Calling Codes: <span class="call-code "></span></p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- bootstrap 4 progressbar -->
+
+          
+          
+        </div>
+
+      </div>
+
+    </main><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="jquery-knob/jquery.knob.min.js"></script>
+    <script src="main.js"></script>
+  
+
+</body></html>
