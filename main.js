@@ -10,7 +10,7 @@ $(function(){
         }
     );
 
-    $('.dial').val(0).trigger('change');
+    $('.dial').val(25).trigger('change');
 
 
     $("#check-api").click(function (e) {
